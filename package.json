@@ -1,0 +1,25 @@
+{
+  "name": "vscode-snippets",
+  "version": "0.1.1",
+  "displayName": "TSX Snippets",
+  "description": "Simple collection of React-TypeScript Snippets",
+  "icon": "images/icon.png",
+  "publisher": "thezhir",
+  "engines": {
+    "vscode": "^0.16.0"
+  },
+  "repository": {
+    "type": "git",
+    "url": "https://github.com/theZHIR/vscode-snippets.git"
+  },
+  "keywords": ["react", "typescript"],
+  "categories": ["Snippets"],
+  "contributes": {
+    "snippets": [
+      {
+        "language": "typescriptreact",
+        "path": "./snippets/typescriptreact.json"
+      }
+    ]
+  }
+}

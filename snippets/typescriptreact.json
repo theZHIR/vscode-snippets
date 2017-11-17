@@ -1,0 +1,158 @@
+{
+  "importReact": {
+    "prefix": "imr",
+    "body": "import * as React from 'react';",
+    "description": "import React"
+  },
+
+  "importReactDOM": {
+    "prefix": "imrd",
+    "body": "import ${1:* as ReactDOM} from 'react-dom';$0",
+    "description": "import ReactDOM"
+  },
+
+  "classComponent": {
+    "prefix": "cc",
+    "body": [
+      "export class ${1:${TM_FILENAME_BASE}} extends React.Component<{}, {}> {",
+      "\trender() {",
+      "\t\treturn $0",
+      "\t}",
+      "}"
+    ],
+    "description": "class component"
+  },
+
+  "classComponentProps": {
+    "prefix": "ccp",
+    "body": [
+      "interface Props {}",
+      "",
+      "export class ${1:${TM_FILENAME_BASE}} extends React.Component<Props, {}> {",
+      "\trender() {",
+      "\t\treturn $0",
+      "\t}",
+      "}"
+    ],
+    "description": "class component with Props"
+  },
+
+  "classComponentState": {
+    "prefix": "ccs",
+    "body": [
+      "interface Props {}",
+      "",
+      "interface State {}",
+      "",
+      "export class ${1:${TM_FILENAME_BASE}} extends React.Component<Props, State> {",
+      "\tconstructor(props: Props) {",
+      "\t\tsuper(props);",
+      "\t\tthis.state = {};",
+      "\t}",
+      "",
+      "\trender() {",
+      "\t\treturn $0",
+      "\t}",
+      "}"
+    ],
+    "description": "class component with State"
+  },
+
+  "classComponentConstructor": {
+    "prefix": "ccc",
+    "body": ["constructor(props: Props) {", "\tsuper(props);", "\t$0", "}"],
+    "description": "constructor() {…}"
+  },
+
+  "statelessFunctionComponent": {
+    "prefix": "sfc",
+    "body": [
+      "export const ${1:${TM_FILENAME_BASE}}: React.SFC<{}> = () => {",
+      "\treturn $0",
+      "};"
+    ],
+    "description": "stateless function component"
+  },
+
+  "statelessFunctionComponentProps": {
+    "prefix": "sfcp",
+    "body": [
+      "interface Props {}",
+      "",
+      "export const ${1:${TM_FILENAME_BASE}}: React.SFC<Props> = props => {",
+      "\treturn $0",
+      "};"
+    ],
+    "description": "stateless function component with Props"
+  },
+
+  "componentWillMount": {
+    "prefix": "cwm",
+    "body": "componentWillMount(): void {$0}",
+    "description": "componentWillMount() {…}"
+  },
+
+  "componentDidMount": {
+    "prefix": "cdm",
+    "body": "componentDidMount(): void {$0}",
+    "description": "componentDidMount() {…}"
+  },
+
+  "componentWillReceiveProps": {
+    "prefix": "cwr",
+    "body": "componentWillReceiveProps(${1:nextProps: Props}): void {$0}",
+    "description": "componentWillReceiveProps() {…}"
+  },
+
+  "shouldComponentUpdate": {
+    "prefix": "scu",
+    "body":
+      "shouldComponentUpdate(${2:nextProps: Props${1:, nextState: State}}): boolean {$0}",
+    "description": "shouldComponentUpdate() {…}"
+  },
+
+  "componentWillUpdate": {
+    "prefix": "cwu",
+    "body":
+      "componentWillUpdate(${2:nextProps: Props${1:, nextState: State}}): void {$0}",
+    "description": "componentWillUpdate() {…}"
+  },
+
+  "componentDidUpdate": {
+    "prefix": "cdu",
+    "body":
+      "componentDidUpdate(${2:prevProps: Props${1:, prevState: State}}): void {$0}",
+    "description": "componentDidUpdate() {…}"
+  },
+
+  "componentWillUnmount": {
+    "prefix": "cwun",
+    "body": "componentWillUnmount(): void {$0}",
+    "description": "componentWillUnmount() {…}"
+  },
+
+  "setState": {
+    "prefix": "ss",
+    "body": "this.setState({ $0 });",
+    "description": "this.setState({…})"
+  },
+
+  "setStateFunction": {
+    "prefix": "ssf",
+    "body":
+      "this.setState((${2:prevState: State${1:, props: Props}}) => {$0});",
+    "description": "this.setState(() => {…})"
+  },
+
+  "defaultProps": {
+    "prefix": "dp",
+    "body": "${1|const,static|} defaultProps: Partial<Props> = {$0};",
+    "description": "defaultProps = {…}"
+  },
+
+  "refs": {
+    "prefix": "refs",
+    "body": ["refs: {", "\t[key: string]: Element;", "\t$0", "};"],
+    "description": "refs: {…}"
+  }
+}
