@@ -107,21 +107,21 @@
   "shouldComponentUpdate": {
     "prefix": "scu",
     "body":
-      "shouldComponentUpdate(${2:nextProps: Props${1:, nextState: State}}): boolean {$0}",
+      "shouldComponentUpdate(${3:${2:nextProps: Props}${1:, nextState: State}}): boolean {$0}",
     "description": "shouldComponentUpdate() {…}"
   },
 
   "componentWillUpdate": {
     "prefix": "cwu",
     "body":
-      "componentWillUpdate(${2:nextProps: Props${1:, nextState: State}}): void {$0}",
+      "componentWillUpdate(${3:${2:nextProps: Props}${1:, nextState: State}}): void {$0}",
     "description": "componentWillUpdate() {…}"
   },
 
   "componentDidUpdate": {
     "prefix": "cdu",
     "body":
-      "componentDidUpdate(${2:prevProps: Props${1:, prevState: State}}): void {$0}",
+      "componentDidUpdate(${3:{2:prevProps: Props}${1:, prevState: State}}): void {$0}",
     "description": "componentDidUpdate() {…}"
   },
 
