@@ -1,6 +1,6 @@
 {
   "name": "vscode-snippets",
-  "version": "0.1.1",
+  "version": "0.1.2",
   "displayName": "TSX Snippets",
   "description": "Simple collection of React-TypeScript Snippets",
   "icon": "images/icon.png",
