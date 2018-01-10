@@ -121,7 +121,7 @@
   "componentDidUpdate": {
     "prefix": "cdu",
     "body":
-      "componentDidUpdate(${3:{2:prevProps: Props}${1:, prevState: State}}): void {$0}",
+      "componentDidUpdate(${3:${2:prevProps: Props}${1:, prevState: State}}): void {$0}",
     "description": "componentDidUpdate() {…}"
   },
 
